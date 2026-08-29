@@ -63,13 +63,7 @@ A zero-compromise, dark-mode-first React interface built with Tailwind CSS v4 an
    npm install
    ```
 
-3. **Configure Environment**
-   Create a `.env` file in the root directory and add your API key:
-   ```env
-   GEMINI_API_KEY="your_api_key_here"
-   ```
-
-4. **Fire up the engine**
+3. **Fire up the engine**
    ```bash
    npm run dev
    ```
