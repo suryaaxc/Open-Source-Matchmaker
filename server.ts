@@ -93,7 +93,7 @@ app.post("/api/sync", async (req, res) => {
       const textToEmbed = `Title: ${issue.title}\nLabels: ${issue.labels.join(", ")}\nDescription: ${issue.body}`;
       try {
         const embedRes = await ai.models.embedContent({
-          model: "text-embedding-004",
+          model: "gemini-embedding-2-preview",
           contents: textToEmbed,
         });
         issue.embedding = embedRes.embeddings?.[0]?.values;
@@ -132,7 +132,7 @@ app.post("/api/recommend", async (req, res) => {
 
     // 1. Embed the user profile
     const embedRes = await ai.models.embedContent({
-      model: "text-embedding-004",
+      model: "gemini-embedding-2-preview",
       contents: profile,
     });
     
