@@ -1,0 +1,6 @@
+{
+  "name": "Open Source Matchmaker",
+  "description": "AI-powered GitHub Issue Matchmaker & Onboarding Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
